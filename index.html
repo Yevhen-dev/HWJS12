@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW12</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+
+    <div class="taks__one box">
+        <h2>Task 1</h2>
+        <div class="taks__one__wrap">
+            <form>
+                <div class="container">
+                    <div class="taks__one__wrap__money">
+                        <label for="money">Tap amount:</label>
+                        <input type="number" id="money">
+                    </div>
+                    <div class="taks__one__wrap__rate">
+                        <label for="rate">Tap rate:</label>
+                        <input type="number" id="rate">
+                    </div>
+                    <div class="taks__one__wrap__btn">
+                        <input type="button" value="Exchange">
+                    </div>
+                </div>
+                <div class="taks__one__wrap__result">
+                    You will get <span class="taks__one__wrap__result__amount">0.00</span> of money
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="taks__two box">
+        <h2>Task 2</h2>
+        <div class="taks__two__todo">
+            <form>
+                <div class="taks__two__todo--wrap">
+                    <div class="taks__two__todo__input">
+                        <label for="task">Type here your task:</label>
+                        <input type="text" id="task">
+                    </div>
+                    <input id="todo-btn" type="button" value="Add task to the list">
+                </div>
+            </form>
+            <ul class="taks__two__todo__list"></ul>
+        </div>
+    </div>
+
+    <div class="taks__three box">
+        <h2>Task 3</h2>
+        <div class="taks__three--wrap">
+            <div class="taks__three__page">
+                <div class="taks__three__page__header">
+                    Header
+                </div>
+                <div class="taks__three__page__main">
+                    Main 
+                    <section class="taks__three__page__main__section">Section</section>
+                </div>
+                <div class="taks__three__page__footer">Footer</div>
+            </div>
+            <div class="taks__three__settings">
+                <form>
+                    <div class="taks__three__settings__color">
+                        <label for="colorHeader">Header: </label>
+                        <input type="color" id="colorHeader">
+                    </div>
+                    <div class="taks__three__settings__color">
+                        <label for="colorMain">Main: </label>
+                        <input type="color" id="colorMain">
+                    </div>
+                    <div class="taks__three__settings__color">
+                        <label for="colorMainSection">Main>section: </label>
+                        <input type="color" id="colorMainSection">
+                    </div>
+                    <div class="taks__three__settings__color">
+                        <label for="colorFooter">Footer: </label>
+                        <input type="color" id="colorFooter">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="taks__four box">
+        <h2>Task 4</h2>
+        <div class="taks__four--wrap">
+            <form>
+                <div class="taks__four__name">
+                    <label for="name">Name: </label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="taks__four__email">
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="taks__four__password">
+                    <label for="password">Password: </label>
+                    <input type="password" id="password" required>
+                </div>
+                <div class="taks__four__password__repeat">
+                    <label for="passwordRepeat">Repeat your password: </label>
+                    <input type="password" id="passwordRepeat" required>
+                </div>
+                <div class="taks__four__submit">
+                    <input type="submit" id="submit" value="Submit" disabled=true>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    
+    
+    <script src="./js/main.js"></script>
+</body>
+</html>

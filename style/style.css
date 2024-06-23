@@ -1,0 +1,182 @@
+:root {
+    --bg-header: #ff0000;
+    --bg-main: #ffa500;
+    --bg-section: #ffff00;
+    --bg-footer: #008000;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+ul {
+    margin: 0;
+}
+
+.box {
+    font-size: 1.8rem;
+    padding: 10px 20px;
+    border: 2px solid rgba(210, 44, 44, 0.771);
+    margin-bottom: 10px;
+}
+
+.container,
+.taks__two__todo--wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5px;
+}
+
+.taks__one__wrap__btn>input,
+#todo-btn,
+#submit {
+    font-size: 2.5rem;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: white;
+    transition: .2s linear;
+    background: #0B63F6;
+}
+
+.taks__one__wrap__btn>input:hover,
+#todo-btn:hover {
+    box-shadow: 0 0 0 2px white, 0 0 0 4px #3C82F8;
+}
+
+.taks__one__wrap__result {
+    text-align: center;
+}
+
+.taks__one__wrap__result__amount {
+    font-size: 2rem;
+}
+
+.taks__two__todo__list__item {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid blue;
+    margin-bottom: 5px;
+}
+
+.taks__two__todo__list__item>input {
+    font-size: 1.6rem;
+}
+
+.taks__two__todo__list__item div.hide {
+    display: none;
+}
+
+.taks__two__todo__list__item__icon-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.taks__two__todo__list__item__icon-wrap__delete {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.taks__two__todo__list__item__icon-wrap__edit,
+.taks__two__todo__list__item__icon-wrap__done {
+    cursor: pointer;
+}
+
+
+
+.taks__three--wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.taks__three__page {
+    width: 40%;
+    border: 2px solid rgb(88, 88, 235);
+}
+
+.taks__three__page__header,
+.taks__three__page__footer {
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+}
+
+.taks__three__page__header {
+    background-color: var(--bg-header);
+}
+
+.taks__three__page__main {
+    text-align: center;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: var(--bg-main);
+}
+
+.taks__three__page__main__section {
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    background-color: var(--bg-section);
+}
+
+.taks__three__page__footer {
+    background-color: var(--bg-footer);
+}
+
+.taks__three__settings {
+    width: 50%;
+}
+
+.taks__three__settings__color {
+    padding-bottom: 5px;
+}
+
+
+
+.taks__four--wrap {
+    border: 2px solid rgb(83, 78, 78);
+    padding: 20px 15px;
+    text-align: center;
+}
+
+.taks__four__name,
+.taks__four__email,
+.taks__four__password,
+.taks__four__password__repeat {
+    padding-bottom: 5px;
+    font-size: 2rem;
+}
+
+#name,
+#email,
+#password,
+#passwordRepeat {
+    font-size: 2rem;
+}
+
+
+
+#name.invalid,
+#email.invalid,
+#password.invalid,
+#passwordRepeat.invalid {
+    border: 1px solid red;
+}
+
+#name.valid,
+#email.valid,
+#password.valid,
+#passwordRepeat.valid {
+    border: 1px solid rgb(0, 225, 0);
+}
+
+#submit:disabled {
+    background: #0b61f62f;
+}
